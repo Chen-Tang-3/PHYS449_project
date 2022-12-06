@@ -7,7 +7,6 @@ from typing import Dict
 
 
 class LearnedSimulator(nn.Module):
-  """Learned simulator from https://arxiv.org/pdf/2002.09405.pdf."""
 
   def __init__(
           self,
@@ -24,6 +23,7 @@ class LearnedSimulator(nn.Module):
           nparticle_types: int,
           particle_type_embedding_size,
           device="cpu"):
+    
     """Initializes the model.
 
     Args:
