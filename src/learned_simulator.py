@@ -32,14 +32,17 @@ class LearnedSimulator(nn.Module):
       nedge_in: Number of edge inputs.
       latent_dim: Size of latent dimension (128)
       nmessage_passing_steps: Number of message passing steps.
-      nmlp_layers: Number of hidden layers in the MLP (typically of size 2).
+      nmlp_layers: Number of hidden layers in the MLP (= 2).
       connectivity_radius: Scalar with the radius of connectivity.
+      
       boundaries: Array of 2-tuples, containing the lower and upper boundaries
         of the cuboid containing the particles along each dimensions, matching
         the dimensionality of the problem.
+        
       normalization_stats: Dictionary with statistics with keys "acceleration"
         and "velocity", containing a named tuple for each with mean and std
         fields, matching the dimensionality of the problem.
+        
       nparticle_types: Number of different particle types.
       particle_type_embedding_size: Embedding size for the particle type.
       device: Runtime device (cuda or cpu).
@@ -68,7 +71,6 @@ class LearnedSimulator(nn.Module):
     self._device = device
 
   def forward(self):
-    """Forward hook runs on class instantiation"""
     pass
 
   def _compute_graph_connectivity(
