@@ -1,14 +1,6 @@
 
-"""Simple matplotlib rendering of a rollout prediction against ground truth.
-
-Usage (from parent directory):
-
-`python -m gns.render_rollout --rollout_path={OUTPUT_PATH}/rollout_test_1.pkl`
-
-Where {OUTPUT_PATH} is the output path passed to `train.py` in "eval_rollout"
-mode.
-
-It may require installing Tkinter with `sudo apt-get install python3.7-tk`.
+"""
+Simple matplotlib rendering of a rollout prediction against ground truth.
 
 """  
 
