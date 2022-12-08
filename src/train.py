@@ -13,11 +13,11 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from absl import flags
 from absl import app
 
-import learned_simulator
-import noise_utils
-import reading_utils
-import data_loader
-import distribute
+from learned_simulator import *
+from noise_utils import *
+from reading_utils import *
+from data_loader import *
+from distribute import *
 
 sys.path.append(“src”)
 
